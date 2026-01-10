@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 3 python:*)",
+      "Bash(python convert_csv_to_js.py:*)",
+      "Bash(python merge_data.py:*)",
+      "Bash(python simple_merge.py:*)",
+      "Bash(python insert_new_tactics.py:*)",
+      "Bash(node:*)",
+      "Bash(python add_chinese_names.py:*)",
+      "Bash(python create_svg_diagrams.py:*)",
+      "Bash(python generate_all_svgs.py:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(if [ -d \"running\" ])",
+      "Bash(then mv running running-plays)",
+      "Bash(fi)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git -C \"//DXP4800-SUI/personal_folder/400 Coding/NFL Strategies\" config user.name \"SUI\")",
+      "Bash(git -C \"//DXP4800-SUI/personal_folder/400 Coding/NFL Strategies\" config user.email \"sui@example.com\")",
+      "Bash(test:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

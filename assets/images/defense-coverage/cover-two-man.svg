@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Cover Two Man
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    Cover 2人盯人 - 双高位+人盯人
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="350" x2="700" y2="350" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="355" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+  <circle cx="150" cy="350" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="150" y="354" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">WR</text>
+  <circle cx="250" cy="340" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="250" y="344" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">WR</text>
+  <circle cx="550" cy="340" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="550" y="344" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">WR</text>
+  <circle cx="650" cy="350" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="650" y="354" text-anchor="middle" fill="#ffffff" font-size="9" font-weight="bold">WR</text>
+  <circle cx="150" cy="300" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="150" y="305" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">CB</text>
+  <circle cx="250" cy="290" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="250" y="295" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">NB</text>
+  <circle cx="550" cy="290" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="550" y="295" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">NB</text>
+  <circle cx="650" cy="300" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="650" y="305" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">CB</text>
+  <circle cx="280" cy="160" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="280" y="165" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">SS</text>
+  <circle cx="520" cy="160" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="520" y="165" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">FS</text>
+  <rect x="150" y="100" width="240" height="150" fill="#ff4444" opacity="0.2" stroke="#ff4444" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="270" y="180" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">深左</text>
+  <rect x="410" y="100" width="240" height="150" fill="#ff4444" opacity="0.2" stroke="#ff4444" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="530" y="180" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">深右</text>
+  <text x="400" y="480" text-anchor="middle" fill="#ffeb3b" font-size="13" font-weight="bold">2深区 + 人盯人</text>
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="18" y="5" fill="#ffffff" font-size="11">= 进攻</text>
+
+    <circle cx="80" cy="0" r="12" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="98" y="5" fill="#ffffff" font-size="11">= 防守</text>
+
+    <line x1="160" y1="0" x2="200" y2="0" stroke="#ff4444" stroke-width="2" stroke-dasharray="3,3"/>
+    <text x="210" y="5" fill="#ffffff" font-size="11">= 覆盖责任</text>
+  </g>
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff4444" opacity="0.6"/>
+    </marker>
+  </defs>
+</svg>

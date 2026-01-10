@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Yard markers -->
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="350" x2="800" y2="350" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="250" x2="800" y2="250" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#ffffff" stroke-width="1" opacity="0.2"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Y-Cross
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    Y字交叉 - TE交叉路线
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="405" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00ffff"/>
+    </marker>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/>
+    </marker>
+    <marker id="arrow3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a90e2"/>
+    </marker>
+    <marker id="arrow4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9b59b6"/>
+    </marker>
+  </defs>
+  <circle cx="180" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="180" y="404" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">X</text>
+  <circle cx="620" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="620" y="404" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">Z</text>
+  <circle cx="550" cy="410" r="12" fill="#ff6b35" stroke="#ffffff" stroke-width="2"/>
+  <text x="550" y="414" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">Y</text>
+  <path d="M 180,385 L 180,160" stroke="#4a90e2" stroke-width="3" fill="none" marker-end="url(#arrow3)"/>
+  <path d="M 620,385 L 620,250 L 560,250" stroke="#00ffff" stroke-width="3" fill="none" marker-end="url(#arrow1)"/>
+  <path d="M 550,395 L 500,360 L 350,280" stroke="#ff6b35" stroke-width="3" fill="none" marker-end="url(#arrow2)"/>
+  <text x="400" y="480" text-anchor="middle" fill="#ffffff" font-size="12">TE交叉到对侧</text>
+  <text x="400" y="500" text-anchor="middle" fill="#ffeb3b" font-size="11">拖曳线卫</text>
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="10" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="16" y="5" fill="#ffffff" font-size="10">= 接球手</text>
+
+    <line x1="80" y1="0" x2="120" y2="0" stroke="#00ffff" stroke-width="2" marker-end="url(#arrow1)"/>
+    <text x="130" y="5" fill="#ffffff" font-size="10">= 路线</text>
+  </g>
+</svg>

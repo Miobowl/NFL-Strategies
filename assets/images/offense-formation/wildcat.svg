@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Wildcat Formation
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    野猫阵型 - 直接开球给RB
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="350" x2="700" y2="350" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="355" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Offensive Line -->
+  <circle cx="250" cy="350" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="250" y="357" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">LT</text>
+
+  <circle cx="320" cy="350" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="320" y="357" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">LG</text>
+
+  <circle cx="400" cy="350" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="400" y="357" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">C</text>
+
+  <circle cx="480" cy="350" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="480" y="357" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">RG</text>
+
+  <circle cx="550" cy="350" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="550" y="357" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">RT</text>
+
+  <!-- Direct snap to RB -->
+  <circle cx="400" cy="410" r="24" fill="#4a90e2" stroke="#00ff00" stroke-width="3"/>
+  <text x="400" y="418" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">RB</text>
+
+  <!-- Snap arrow -->
+  <defs>
+    <marker id="snapArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00ff00"/>
+    </marker>
+  </defs>
+  <line x1="400" y1="360" x2="400" y2="390" stroke="#00ff00" stroke-width="3" marker-end="url(#snapArrow)"/>
+  <text x="420" y="380" fill="#00ff00" font-size="11" font-weight="bold">直接开球</text>
+
+  <!-- QB/WR position (optional) -->
+  <circle cx="180" cy="360" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="180" y="366" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">WR</text>
+
+  <circle cx="620" cy="360" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="620" y="366" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">WR</text>
+
+  <!-- Fullback -->
+  <circle cx="350" cy="440" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="350" y="447" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">FB</text>
+
+  <!-- Key Features -->
+  <g transform="translate(540, 140)">
+    <rect x="-10" y="-10" width="240" height="120" fill="#000000" opacity="0.85" rx="8"/>
+    <text x="0" y="10" fill="#ffffff" font-size="13" font-weight="bold">Wildcat 要点:</text>
+    <text x="0" y="30" fill="#ffffff" font-size="10">✓ RB直接接球</text>
+    <text x="0" y="46" fill="#ffffff" font-size="10">✓ 多一个阻挡者</text>
+    <text x="0" y="62" fill="#ffffff" font-size="10">✓ 出其不意</text>
+    <text x="0" y="78" fill="#ffffff" font-size="10">⚠ 传球能力有限</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="14" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="20" y="5" fill="#ffffff" font-size="12">= 进攻</text>
+
+    <circle cx="100" cy="0" r="14" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="5" fill="#ffffff" font-size="12">= 防守</text>
+  </g>
+</svg>

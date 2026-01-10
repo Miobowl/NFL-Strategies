@@ -1,0 +1,35 @@
+图片占位说明
+================
+
+本文件夹用于存放从YouTube视频中截取的战术图片。
+
+## 图片命名规范
+
+offense/shotgun-formation.jpg
+offense/i-formation.jpg
+offense/spread-offense.jpg
+routes/go-route.jpg
+routes/slant-route.jpg
+defense/cover-2.jpg
+running/inside-zone.jpg
+
+## 获取图片步骤
+
+1. 打开YouTube视频
+2. 暂停到关键画面
+3. 使用截图工具 (Windows: Win + Shift + S)
+4. 保存到对应分类文件夹
+5. 使用 TinyPNG 或 Squoosh 压缩图片
+6. 确保文件名与 data.js 中的 image 路径匹配
+
+## 推荐规格
+
+- 分辨率: 1280x720 或 1920x1080
+- 格式: JPG 或 PNG
+- 大小: < 150KB
+- 宽高比: 16:9
+
+## 临时方案
+
+在获取真实图片之前,网站会显示占位图标 🏈
+CSS已经设置了优雅的降级方案

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NFL橄榄球战术学习网站 - 为入门者提供交互式战术教学">
+    <meta name="keywords" content="橄榄球, NFL, 战术, 进攻阵型, 防守阵型, 传球路线">
+    <title>NFL Strategies - 橄榄球战术学习网站</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">🏈 NFL Strategies</h1>
+            <p class="site-subtitle">橄榄球战术交互式学习</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="all">全部战术</button>
+                <button class="tab-btn" data-tab="offense">进攻战术</button>
+                <button class="tab-btn" data-tab="defense">防守战术</button>
+                <button class="tab-btn" data-tab="routes">路线</button>
+            </div>
+
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="category-filter">分类：</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">全部分类</option>
+                        <!-- Options will be dynamically generated -->
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>难度：</label>
+                    <div class="filter-buttons" id="difficulty-filters">
+                        <button class="filter-btn active" data-difficulty="all">全部</button>
+                        <button class="filter-btn" data-difficulty="beginner">入门</button>
+                        <button class="filter-btn" data-difficulty="intermediate">中级</button>
+                        <button class="filter-btn" data-difficulty="advanced">高级</button>
+                    </div>
+                </div>
+
+                <div class="search-group">
+                    <input type="text" id="search-input" class="search-input" placeholder="搜索战术名称或描述...">
+                    <button class="search-btn" id="search-btn" aria-label="搜索">🔍</button>
+                </div>
+            </div>
+
+            <!-- Results Info -->
+            <div class="results-info" id="results-info">
+                <span id="results-count">加载中...</span>
+            </div>
+
+            <!-- Tactics Grid -->
+            <div class="tactics-grid" id="tactics-grid">
+                <!-- Cards will be dynamically generated here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="tactic-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="关闭">&times;</button>
+
+            <div class="modal-header">
+                <div class="modal-category-badge" id="modal-category-badge"></div>
+                <h2 class="modal-title-en" id="modal-title-en"></h2>
+                <p class="modal-title-cn" id="modal-title-cn"></p>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-image-wrapper">
+                    <img src="" alt="" class="modal-image" id="modal-image">
+                </div>
+
+                <div class="modal-description">
+                    <h3>战术介绍</h3>
+                    <p id="modal-description"></p>
+                </div>
+
+                <div class="modal-details">
+                    <div class="detail-section">
+                        <h3 class="section-title advantages-title">优点</h3>
+                        <ul class="detail-list advantages-list" id="modal-advantages"></ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3 class="section-title weaknesses-title">弱点</h3>
+                        <ul class="detail-list weaknesses-list" id="modal-weaknesses"></ul>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3 class="section-title counters-title">应对方法</h3>
+                        <ul class="detail-list counters-list" id="modal-counters"></ul>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="modal-situations" id="modal-situations"></div>
+                    <div class="modal-video-link">
+                        <a href="#" target="_blank" rel="noopener noreferrer" id="modal-video-link">
+                            查看视频来源 📺
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 NFL Strategies. 教育用途 - 视频来源于 YouTube 教学视频</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

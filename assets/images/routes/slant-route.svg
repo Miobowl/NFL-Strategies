@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Slant Route
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    斜插路线 - 45度角切入中路
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="450" x2="700" y2="450" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="455" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Quarterback -->
+  <circle cx="400" cy="480" r="22" fill="#ff6b35" stroke="#ffffff" stroke-width="3"/>
+  <text x="400" y="488" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">QB</text>
+
+  <!-- Wide Receiver - starting position -->
+  <circle cx="250" cy="450" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="3"/>
+  <text x="250" y="457" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">WR</text>
+
+  <!-- Cornerback -->
+  <circle cx="270" cy="420" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="270" y="427" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">CB</text>
+
+  <!-- Linebacker (middle) -->
+  <circle cx="380" cy="380" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="380" y="387" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">LB</text>
+
+  <!-- Slant Route Path -->
+  <defs>
+    <marker id="slantArrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#00ff00"/>
+    </marker>
+  </defs>
+
+  <!-- Route: Forward then 45-degree angle inward -->
+  <path d="M 250,430 L 250,400 L 380,300" stroke="#00ff00" stroke-width="4"
+        fill="none" marker-end="url(#slantArrow)"/>
+
+  <!-- Step markers on route -->
+  <text x="230" y="415" fill="#00ffff" font-size="11" font-weight="bold">1-2步</text>
+  <text x="280" y="360" fill="#00ffff" font-size="11" font-weight="bold">45°切入</text>
+
+  <!-- Angle indicator -->
+  <path d="M 250,380 L 270,380 L 270,360" stroke="#00ffff" stroke-width="1.5" fill="none"/>
+  <text x="275" y="375" fill="#00ffff" font-size="10">45°</text>
+
+  <!-- Receiver at catch point -->
+  <circle cx="380" cy="300" r="20" fill="#4a90e2" stroke="#00ff00" stroke-width="3" opacity="0.8"/>
+  <text x="380" y="307" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">WR</text>
+
+  <!-- Pass trajectory (quick pass) -->
+  <defs>
+    <marker id="quickBall" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ffeb3b"/>
+    </marker>
+  </defs>
+
+  <path d="M 400,465 Q 390,380 380,300" stroke="#ffeb3b" stroke-width="3" fill="none"
+        marker-end="url(#quickBall)" stroke-dasharray="6,3"/>
+
+  <!-- Football -->
+  <ellipse cx="390" cy="375" rx="9" ry="13" fill="#8B4513" stroke="#ffffff" stroke-width="1"/>
+  <line x1="390" y1="367" x2="390" y2="383" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- Timing indicator -->
+  <g transform="translate(320, 490)">
+    <rect x="0" y="0" width="120" height="30" fill="#000000" opacity="0.7" rx="5"/>
+    <text x="60" y="20" text-anchor="middle" fill="#ffeb3b" font-size="14" font-weight="bold">
+      快速出球!
+    </text>
+  </g>
+
+  <!-- Defender getting beat -->
+  <circle cx="300" cy="350" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <text x="300" y="357" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">CB</text>
+  <text x="250" y="350" fill="#ff4444" font-size="12" opacity="0.7">被甩开</text>
+
+  <!-- Middle of field indicator -->
+  <line x1="400" y1="100" x2="400" y2="550" stroke="#ffffff" stroke-width="2" stroke-dasharray="5,10" opacity="0.2"/>
+  <text x="410" y="200" fill="#ffffff" font-size="12" opacity="0.5">中路</text>
+
+  <!-- YAC space indicator -->
+  <defs>
+    <marker id="yacArrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00ffff"/>
+    </marker>
+  </defs>
+  <line x1="380" y1="280" x2="420" y2="200" stroke="#00ffff" stroke-width="2"
+        stroke-dasharray="4,4" marker-end="url(#yacArrow)"/>
+  <text x="430" y="240" fill="#00ffff" font-size="11">YAC空间</text>
+
+  <!-- Distance markers -->
+  <text x="180" y="450" fill="#ffffff" font-size="11" opacity="0.7">0码</text>
+  <text x="180" y="350" fill="#ffffff" font-size="11" opacity="0.7">10码</text>
+  <text x="180" y="250" fill="#ffffff" font-size="11" opacity="0.7">20码</text>
+
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="14" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="22" y="5" fill="#ffffff" font-size="13">= 接球手</text>
+
+    <circle cx="140" cy="0" r="14" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="162" y="5" fill="#ffffff" font-size="13">= 防守球员</text>
+
+    <line x1="300" y1="0" x2="360" y2="0" stroke="#00ff00" stroke-width="4"/>
+    <text x="370" y="5" fill="#ffffff" font-size="13">= 跑动路线</text>
+  </g>
+
+  <!-- Key Features -->
+  <g transform="translate(520, 160)">
+    <rect x="-10" y="-10" width="250" height="150" fill="#000000" opacity="0.8" rx="8"/>
+    <text x="0" y="10" fill="#ffffff" font-size="13" font-weight="bold">关键要点:</text>
+    <text x="0" y="32" fill="#ffffff" font-size="11">✓ 向前1-2步后切入</text>
+    <text x="0" y="50" fill="#ffffff" font-size="11">✓ 45度角进入中路</text>
+    <text x="0" y="68" fill="#ffffff" font-size="11">✓ 快速出球时机</text>
+    <text x="0" y="86" fill="#ffffff" font-size="11">✓ 利用中路空档</text>
+    <text x="0" y="104" fill="#ffffff" font-size="11">✓ 接球后跑动空间(YAC)</text>
+    <text x="0" y="122" fill="#ffffff" font-size="11">✓ 对抗紧逼防守有效</text>
+  </g>
+
+  <!-- Danger zone -->
+  <circle cx="380" cy="350" r="40" fill="none" stroke="#ffaa00" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  <text x="440" y="360" fill="#ffaa00" font-size="11">危险区域</text>
+  <text x="440" y="375" fill="#ffaa00" font-size="10">(线卫可击球)</text>
+</svg>

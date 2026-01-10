@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Nickel Defense
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    镍币防守 - 5后卫专防传球
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="405" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- D-Line (4) -->
+  <circle cx="280" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="280" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DE</text>
+
+  <circle cx="360" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="360" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DT</text>
+
+  <circle cx="440" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="440" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DT</text>
+
+  <circle cx="520" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="520" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DE</text>
+
+  <!-- Linebackers (2) -->
+  <circle cx="340" cy="310" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="340" y="316" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">LB</text>
+
+  <circle cx="460" cy="310" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="460" y="316" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">LB</text>
+
+  <!-- DBs (5) - Nickel package -->
+  <circle cx="180" cy="340" r="16" fill="#ff4444" stroke="#ffeb3b" stroke-width="2"/>
+  <text x="180" y="346" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">CB</text>
+
+  <circle cx="280" cy="260" r="16" fill="#ff4444" stroke="#ffeb3b" stroke-width="2"/>
+  <text x="280" y="266" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">NI</text>
+  <text x="280" y="245" fill="#ffeb3b" font-size="10">镍币CB</text>
+
+  <circle cx="400" cy="220" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="400" y="226" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">FS</text>
+
+  <circle cx="520" cy="260" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="520" y="266" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">SS</text>
+
+  <circle cx="620" cy="340" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="620" y="346" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">CB</text>
+
+  <!-- Formation label -->
+  <g transform="translate(580, 480)">
+    <rect x="0" y="0" width="200" height="80" fill="#000000" opacity="0.8" rx="8" stroke="#ffeb3b" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" fill="#ffeb3b" font-size="28" font-weight="bold">4-2-5</text>
+    <text x="100" y="55" text-anchor="middle" fill="#ffffff" font-size="14">Nickel Defense</text>
+  </g>
+
+  <!-- Key Features -->
+  <g transform="translate(50, 100)">
+    <rect x="-10" y="-10" width="260" height="130" fill="#000000" opacity="0.85" rx="8"/>
+    <text x="0" y="10" fill="#ffffff" font-size="13" font-weight="bold">Nickel 要点:</text>
+    <text x="0" y="30" fill="#ffffff" font-size="10">✓ 5后卫专防槽位接球手</text>
+    <text x="0" y="46" fill="#ffffff" font-size="10">✓ NFL 65%战术使用</text>
+    <text x="0" y="62" fill="#ffffff" font-size="10">✓ 应对3外接手阵型</text>
+    <text x="0" y="78" fill="#ffffff" font-size="10">⚠ 防跑相对较弱</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="14" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="20" y="5" fill="#ffffff" font-size="12">= 进攻</text>
+
+    <circle cx="100" cy="0" r="14" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="5" fill="#ffffff" font-size="12">= 防守</text>
+  </g>
+</svg>

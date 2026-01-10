@@ -1,0 +1,369 @@
+/* ==========================================
+   NFL Strategies - Responsive Styles
+   橄榄球战术网站 - 响应式样式
+   ========================================== */
+
+/* ========== Desktop Large (1400px+) ========== */
+@media (min-width: 1400px) {
+  .tactics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ========== Desktop (1200px - 1399px) ========== */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .tactics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ========== Tablet Landscape (992px - 1199px) ========== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .tactics-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+/* ========== Tablet (768px - 991px) ========== */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+
+  .tactics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  .site-subtitle {
+    font-size: 1rem;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-md);
+  }
+
+  .filter-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .filter-select {
+    flex: 1;
+    max-width: none;
+  }
+
+  .search-group {
+    margin-left: 0;
+    max-width: none;
+  }
+}
+
+/* ========== Mobile Large (576px - 767px) ========== */
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+
+  .tactics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+
+  .header {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .site-title {
+    font-size: 1.75rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+
+  .filter-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .filter-group label {
+    font-size: 0.875rem;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .filter-btn {
+    flex: 1;
+    padding: var(--spacing-sm);
+    font-size: 0.8125rem;
+  }
+
+  .search-group {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .search-input {
+    font-size: 0.875rem;
+  }
+}
+
+/* ========== Mobile (max-width: 575px) ========== */
+@media (max-width: 575px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .header {
+    padding: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.875rem;
+  }
+
+  /* Filter Bar - Mobile Optimized */
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+  }
+
+  .filter-group {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+
+  .filter-group label {
+    font-size: 0.875rem;
+    font-weight: 700;
+  }
+
+  .filter-select {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xs);
+  }
+
+  .filter-btn {
+    width: 100%;
+    padding: var(--spacing-sm);
+    font-size: 0.8125rem;
+  }
+
+  .search-group {
+    margin-left: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  .search-input {
+    font-size: 0.875rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .search-btn {
+    min-width: 44px;
+    font-size: 1rem;
+  }
+
+  /* Results Info */
+  .results-info {
+    padding: var(--spacing-sm) 0;
+    font-size: 0.875rem;
+  }
+
+  /* Tactics Grid - Single Column on Mobile */
+  .tactics-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--spacing-lg) 0;
+    font-size: 0.8125rem;
+  }
+
+  /* Ensure touch-friendly targets (44x44px minimum) */
+  .filter-btn,
+  .search-btn,
+  .tactic-card {
+    min-height: 44px;
+  }
+}
+
+/* ========== Mobile Small (max-width: 375px) ========== */
+@media (max-width: 375px) {
+  html {
+    font-size: 13px;
+  }
+
+  .site-title {
+    font-size: 1.375rem;
+  }
+
+  .filter-bar {
+    padding: var(--spacing-sm);
+  }
+
+  .filter-buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xs);
+  }
+
+  .filter-btn {
+    font-size: 0.75rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
+
+/* ========== Landscape Mode Adjustments ========== */
+@media (max-height: 600px) and (orientation: landscape) {
+  .modal-content {
+    max-height: 95vh;
+  }
+
+  .modal-image-wrapper {
+    height: 200px;
+  }
+
+  .header {
+    padding: var(--spacing-md) 0;
+  }
+}
+
+/* ========== Print Styles (Bonus) ========== */
+@media print {
+  .header,
+  .filter-bar,
+  .footer,
+  .modal-close,
+  .search-group {
+    display: none !important;
+  }
+
+  .modal-content {
+    box-shadow: none;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .tactic-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  body {
+    background: white;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+/* ========== Reduced Motion ========== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ========== Dark Mode (Optional for Future) ========== */
+@media (prefers-color-scheme: dark) {
+  /*
+  Will implement if user requests dark mode support
+  Currently not in scope, but prepared for future enhancement
+  */
+}
+
+/* ========== High Contrast Mode ========== */
+@media (prefers-contrast: high) {
+  .tactic-card {
+    border: 3px solid var(--text-primary);
+  }
+
+  .filter-btn,
+  .search-btn,
+  .modal-close {
+    border: 2px solid currentColor;
+  }
+}
+
+/* ========== Touch Device Optimizations ========== */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .filter-btn,
+  .search-btn,
+  .modal-close,
+  .tag {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .tactic-card:hover {
+    transform: none;
+  }
+
+  /* Tap highlight color */
+  * {
+    -webkit-tap-highlight-color: rgba(26, 71, 42, 0.1);
+  }
+}

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="250" x2="800" y2="250" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="500" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Spread Offense
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    展开进攻 - 接球手分散全场
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="50" y1="250" x2="750" y2="250" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="20" y="255" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Offensive Line (5 players) -->
+  <circle cx="300" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="300" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">LT</text>
+
+  <circle cx="355" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="355" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">LG</text>
+
+  <circle cx="400" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="400" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">C</text>
+
+  <circle cx="445" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="445" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">RG</text>
+
+  <circle cx="500" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="500" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">RT</text>
+
+  <!-- Quarterback (Shotgun) -->
+  <circle cx="400" cy="320" r="22" fill="#ff6b35" stroke="#ffffff" stroke-width="3"/>
+  <text x="400" y="328" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">QB</text>
+
+  <!-- Running Back -->
+  <circle cx="350" cy="320" r="16" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="350" y="325" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">RB</text>
+
+  <!-- Wide Receivers - Spread formation (5 receivers) -->
+  <!-- Far Left WR -->
+  <circle cx="80" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="80" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">WR</text>
+
+  <!-- Left Slot WR -->
+  <circle cx="220" cy="240" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="220" y="246" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">WR</text>
+
+  <!-- Right Slot WR -->
+  <circle cx="580" cy="240" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="580" y="246" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">WR</text>
+
+  <!-- Far Right WR -->
+  <circle cx="720" cy="250" r="18" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="720" y="256" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">WR</text>
+
+  <!-- Spread width indicator -->
+  <line x1="80" y1="280" x2="720" y2="280" stroke="#00ffff" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 80,280 L 90,275 L 90,285 Z" fill="#00ffff"/>
+  <path d="M 720,280 L 710,275 L 710,285 Z" fill="#00ffff"/>
+  <text x="400" y="300" text-anchor="middle" fill="#00ffff" font-size="13" font-weight="bold">场地宽度展开</text>
+
+  <!-- Defense (示意 - more spread out) -->
+  <text x="400" y="180" text-anchor="middle" fill="#ff4444" font-size="14" opacity="0.6">← Defense (被迫展开)</text>
+
+  <!-- Defensive players shown spread -->
+  <circle cx="120" cy="200" r="12" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+  <circle cx="250" cy="200" r="12" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+  <circle cx="400" cy="200" r="12" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+  <circle cx="550" cy="200" r="12" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+  <circle cx="680" cy="200" r="12" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.4"/>
+
+  <!-- Route arrows (example routes) -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#00ff00"/>
+    </marker>
+  </defs>
+
+  <!-- Example passing routes -->
+  <path d="M 80,250 L 80,170" stroke="#00ff00" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+  <path d="M 220,240 L 280,180" stroke="#00ff00" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+  <path d="M 580,240 L 520,180" stroke="#00ff00" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+  <path d="M 720,250 L 720,170" stroke="#00ff00" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.6"/>
+
+  <!-- Legend -->
+  <g transform="translate(50, 420)">
+    <circle cx="0" cy="0" r="13" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="20" y="5" fill="#ffffff" font-size="13">= 进攻球员</text>
+
+    <circle cx="150" cy="0" r="13" fill="none" stroke="#ff4444" stroke-width="2"/>
+    <text x="170" y="5" fill="#ffffff" font-size="13">= 防守球员</text>
+  </g>
+
+  <!-- Key Features -->
+  <g transform="translate(520, 360)">
+    <text x="0" y="0" fill="#ffffff" font-size="12" font-weight="bold">关键特点:</text>
+    <text x="0" y="20" fill="#ffffff" font-size="11">• 4-5个接球手展开</text>
+    <text x="0" y="38" fill="#ffffff" font-size="11">• 迫使防守展开</text>
+    <text x="0" y="56" fill="#ffffff" font-size="11">• 创造空间和速度优势</text>
+    <text x="0" y="74" fill="#ffffff" font-size="11">• 一对一匹配机会</text>
+  </g>
+</svg>

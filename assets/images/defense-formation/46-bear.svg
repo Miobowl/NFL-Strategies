@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    46 Bear Defense
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    46熊式防守 - 芝加哥传奇
+  </text>
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="405" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+  <!-- Defensive Line -->
+  <circle cx="260" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="260" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DE</text>
+  <circle cx="340" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="340" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DT</text>
+  <circle cx="440" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="440" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DT</text>
+  <circle cx="540" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="540" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DE</text>
+  <!-- Linebacker 46 position -->
+  <circle cx="480" cy="340" r="20" fill="#ff4444" stroke="#ffeb3b" stroke-width="3"/>
+  <text x="480" y="346" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">46</text>
+  <!-- Linebackers -->
+  <circle cx="280" cy="310" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="280" y="316" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">OLB</text>
+  <circle cx="380" cy="310" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="380" y="316" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold">MLB</text>
+  <!-- Defensive Backs -->
+  <circle cx="180" cy="330" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="180" y="336" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">CB</text>
+  <circle cx="620" cy="330" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="620" y="336" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">CB</text>
+  <circle cx="300" cy="200" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="300" y="206" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">SS</text>
+  <circle cx="500" cy="200" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="500" y="206" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">FS</text>
+  <text x="400" y="530" text-anchor="middle" fill="#00ffff" font-size="13">激进压迫式防守</text>
+  <text x="480" y="295" text-anchor="middle" fill="#ffeb3b" font-size="10">46号位</text>
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="14" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="20" y="5" fill="#ffffff" font-size="12">= 进攻</text>
+
+    <circle cx="100" cy="0" r="14" fill="#ff6b35" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="5" fill="#ffffff" font-size="12">= 四分卫</text>
+
+    <circle cx="230" cy="0" r="14" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="250" y="5" fill="#ffffff" font-size="12">= 防守</text>
+  </g>
+</svg>

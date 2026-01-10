@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Cover 2 Defense
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    Cover 2防守 - 两个安全卫分区覆盖深度
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="405" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Offensive Formation (简化) -->
+  <g opacity="0.4">
+    <!-- O-Line -->
+    <circle cx="300" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="350" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="400" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="450" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="500" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <!-- WRs -->
+    <circle cx="150" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="650" cy="400" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+    <!-- QB -->
+    <circle cx="400" cy="450" r="14" fill="#4a90e2" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Defensive Line (4 players) -->
+  <circle cx="300" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="300" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DE</text>
+
+  <circle cx="370" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="370" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DT</text>
+
+  <circle cx="430" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="430" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DT</text>
+
+  <circle cx="500" cy="370" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="500" y="376" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">DE</text>
+
+  <!-- Linebackers (3 players - under zones) -->
+  <circle cx="280" cy="320" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="280" y="326" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">OLB</text>
+
+  <circle cx="400" cy="320" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="400" y="326" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">MLB</text>
+
+  <circle cx="520" cy="320" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="520" y="326" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">OLB</text>
+
+  <!-- Cornerbacks (2 players - flat zones) -->
+  <circle cx="180" cy="360" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="180" y="366" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">CB</text>
+
+  <circle cx="620" cy="360" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="620" y="366" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold">CB</text>
+
+  <!-- Safeties (2 players - KEY PLAYERS in Cover 2) -->
+  <circle cx="280" cy="180" r="22" fill="#ff4444" stroke="#ffeb3b" stroke-width="3"/>
+  <text x="280" y="187" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">SS</text>
+
+  <circle cx="520" cy="180" r="22" fill="#ff4444" stroke="#ffeb3b" stroke-width="3"/>
+  <text x="520" y="187" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">FS</text>
+
+  <!-- Coverage Zones -->
+  <!-- Left Deep Half -->
+  <path d="M 100,400 L 100,100 L 400,100 L 400,400"
+        fill="#ff6b6b" opacity="0.2" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="250" y="250" text-anchor="middle" fill="#ff6b6b" font-size="16" font-weight="bold">深度半边</text>
+  <text x="250" y="270" text-anchor="middle" fill="#ff6b6b" font-size="12">(SS负责)</text>
+
+  <!-- Right Deep Half -->
+  <path d="M 400,400 L 400,100 L 700,100 L 700,400"
+        fill="#ff8b8b" opacity="0.2" stroke="#ff8b8b" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="550" y="250" text-anchor="middle" fill="#ff8b8b" font-size="16" font-weight="bold">深度半边</text>
+  <text x="550" y="270" text-anchor="middle" fill="#ff8b8b" font-size="12">(FS负责)</text>
+
+  <!-- Under zones (5 zones) -->
+  <text x="180" y="340" text-anchor="middle" fill="#ffeb3b" font-size="10">浅层</text>
+  <text x="280" y="300" text-anchor="middle" fill="#ffeb3b" font-size="10">浅层</text>
+  <text x="400" y="300" text-anchor="middle" fill="#ffeb3b" font-size="10">中路</text>
+  <text x="520" y="300" text-anchor="middle" fill="#ffeb3b" font-size="10">浅层</text>
+  <text x="620" y="340" text-anchor="middle" fill="#ffeb3b" font-size="10">浅层</text>
+
+  <!-- Middle line (divider between 2 halves) -->
+  <line x1="400" y1="100" x2="400" y2="400" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="410" y="120" fill="#ffeb3b" font-size="12" font-weight="bold">中线分界</text>
+
+  <!-- Depth marker -->
+  <line x1="100" y1="250" x2="700" y2="250" stroke="#ffffff" stroke-width="1" stroke-dasharray="5,5" opacity="0.3"/>
+  <text x="70" y="255" fill="#ffffff" font-size="11" opacity="0.7">深度线</text>
+
+  <!-- Coverage arrows showing safety responsibility -->
+  <defs>
+    <marker id="coverArrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#ffeb3b"/>
+    </marker>
+  </defs>
+
+  <!-- SS coverage -->
+  <line x1="280" y1="200" x2="200" y2="280" stroke="#ffeb3b" stroke-width="2" marker-end="url(#coverArrow)" opacity="0.6"/>
+  <line x1="280" y1="200" x2="360" y2="280" stroke="#ffeb3b" stroke-width="2" marker-end="url(#coverArrow)" opacity="0.6"/>
+
+  <!-- FS coverage -->
+  <line x1="520" y1="200" x2="440" y2="280" stroke="#ffeb3b" stroke-width="2" marker-end="url(#coverArrow)" opacity="0.6"/>
+  <line x1="520" y1="200" x2="600" y2="280" stroke="#ffeb3b" stroke-width="2" marker-end="url(#coverArrow)" opacity="0.6"/>
+
+  <!-- Legend -->
+  <g transform="translate(50, 520)">
+    <circle cx="0" cy="0" r="15" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="22" y="5" fill="#ffffff" font-size="13">= 防守球员</text>
+
+    <circle cx="150" cy="0" r="15" fill="#ff4444" stroke="#ffeb3b" stroke-width="3"/>
+    <text x="172" y="5" fill="#ffffff" font-size="13">= 安全卫 (关键)</text>
+  </g>
+
+  <!-- Key Features -->
+  <g transform="translate(50, 90)">
+    <rect x="-10" y="-10" width="280" height="170" fill="#000000" opacity="0.85" rx="8"/>
+    <text x="0" y="10" fill="#ffffff" font-size="14" font-weight="bold">Cover 2 关键点:</text>
+    <text x="0" y="32" fill="#ffffff" font-size="11">✓ 2个安全卫各守半边深度</text>
+    <text x="0" y="50" fill="#ffffff" font-size="11">✓ 5个球员覆盖浅层区域</text>
+    <text x="0" y="68" fill="#ffffff" font-size="11">✓ 角卫负责边线浅层</text>
+    <text x="0" y="86" fill="#ffffff" font-size="11">✓ 线卫填补中路</text>
+    <text x="0" y="104" fill="#ffffff" font-size="11">✓ 有效防守边路和深传</text>
+    <text x="0" y="122" fill="#ffffff" font-size="11">⚠ 弱点: 中路15-20码区域</text>
+    <text x="0" y="140" fill="#ffffff" font-size="11">⚠ 弱点: 安全卫交界Seam路线</text>
+  </g>
+
+  <!-- Vulnerable zone indicator -->
+  <ellipse cx="400" cy="260" rx="60" ry="40" fill="none" stroke="#ffaa00" stroke-width="3" stroke-dasharray="6,4"/>
+  <text x="470" y="265" fill="#ffaa00" font-size="12" font-weight="bold">脆弱区域</text>
+
+  <!-- Formation name -->
+  <g transform="translate(650, 520)">
+    <rect x="0" y="0" width="130" height="50" fill="#000000" opacity="0.8" rx="8" stroke="#ffeb3b" stroke-width="2"/>
+    <text x="65" y="25" text-anchor="middle" fill="#ffeb3b" font-size="20" font-weight="bold">COVER</text>
+    <text x="65" y="45" text-anchor="middle" fill="#ffeb3b" font-size="32" font-weight="bold">2</text>
+  </g>
+</svg>

@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Go Route (9 Route)
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    直线深传路线 - Fly Route / Streak
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="450" x2="700" y2="450" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="455" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Quarterback -->
+  <circle cx="400" cy="480" r="22" fill="#ff6b35" stroke="#ffffff" stroke-width="3"/>
+  <text x="400" y="488" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">QB</text>
+
+  <!-- Wide Receiver - starting position -->
+  <circle cx="200" cy="450" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="3"/>
+  <text x="200" y="457" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">WR</text>
+
+  <!-- Defender - starting position (Cornerback) -->
+  <circle cx="220" cy="420" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="220" y="427" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">CB</text>
+
+  <!-- Go Route Path -->
+  <defs>
+    <marker id="routeArrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#00ff00"/>
+    </marker>
+  </defs>
+
+  <line x1="200" y1="430" x2="200" y2="120" stroke="#00ff00" stroke-width="4" marker-end="url(#routeArrow)"/>
+  <text x="230" y="280" fill="#00ff00" font-size="16" font-weight="bold">直线冲刺</text>
+
+  <!-- Receiver at catch point -->
+  <circle cx="200" cy="140" r="20" fill="#4a90e2" stroke="#00ff00" stroke-width="3" opacity="0.8"/>
+  <text x="200" y="147" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">WR</text>
+
+  <!-- Defender trailing -->
+  <circle cx="220" cy="180" r="18" fill="#ff4444" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+  <text x="220" y="187" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">CB</text>
+
+  <!-- Pass trajectory -->
+  <defs>
+    <marker id="ballArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ffeb3b"/>
+    </marker>
+  </defs>
+
+  <path d="M 400,460 Q 300,250 200,140" stroke="#ffeb3b" stroke-width="3" fill="none"
+        marker-end="url(#ballArrow)" stroke-dasharray="8,4"/>
+
+  <!-- Football at midpoint -->
+  <ellipse cx="310" cy="280" rx="10" ry="15" fill="#8B4513" stroke="#ffffff" stroke-width="1"/>
+  <line x1="310" y1="270" x2="310" y2="290" stroke="#ffffff" stroke-width="1"/>
+
+  <!-- Distance markers -->
+  <text x="150" y="450" fill="#ffffff" font-size="12" opacity="0.7">0码</text>
+  <text x="150" y="350" fill="#ffffff" font-size="12" opacity="0.7">10码</text>
+  <text x="150" y="250" fill="#ffffff" font-size="12" opacity="0.7">20码</text>
+  <text x="150" y="150" fill="#ffffff" font-size="12" opacity="0.7">30码</text>
+
+  <!-- Yard lines -->
+  <line x1="180" y1="350" x2="220" y2="350" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="180" y1="250" x2="220" y2="250" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="180" y1="150" x2="220" y2="150" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+
+  <!-- Speed indicator -->
+  <g transform="translate(200, 320)">
+    <line x1="-20" y1="0" x2="-25" y2="-10" stroke="#00ffff" stroke-width="2"/>
+    <line x1="-10" y1="0" x2="-15" y2="-15" stroke="#00ffff" stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="-20" stroke="#00ffff" stroke-width="2"/>
+    <line x1="10" y1="0" x2="15" y2="-15" stroke="#00ffff" stroke-width="2"/>
+    <line x1="20" y1="0" x2="25" y2="-10" stroke="#00ffff" stroke-width="2"/>
+    <text x="30" y="5" fill="#00ffff" font-size="12" font-weight="bold">全速冲刺</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="15" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="25" y="5" fill="#ffffff" font-size="14">= 接球手 (WR)</text>
+
+    <circle cx="200" cy="0" r="15" fill="#ff4444" stroke="#ffffff" stroke-width="2"/>
+    <text x="225" y="5" fill="#ffffff" font-size="14">= 防守角卫 (CB)</text>
+
+    <line x1="400" y1="0" x2="470" y2="0" stroke="#00ff00" stroke-width="4"/>
+    <text x="480" y="5" fill="#ffffff" font-size="14">= 跑动路线</text>
+  </g>
+
+  <!-- Key Features -->
+  <g transform="translate(520, 140)">
+    <rect x="-10" y="-10" width="250" height="140" fill="#000000" opacity="0.7" rx="8"/>
+    <text x="0" y="10" fill="#ffffff" font-size="13" font-weight="bold">关键要点:</text>
+    <text x="0" y="32" fill="#ffffff" font-size="11">✓ 全速直线冲刺</text>
+    <text x="0" y="50" fill="#ffffff" font-size="11">✓ 利用速度优势</text>
+    <text x="0" y="68" fill="#ffffff" font-size="11">✓ 超越防守球员</text>
+    <text x="0" y="86" fill="#ffffff" font-size="11">✓ 需要强臂四分卫</text>
+    <text x="0" y="104" fill="#ffffff" font-size="11">✓ 威胁防守深度</text>
+    <text x="0" y="122" fill="#ffffff" font-size="11">✓ 大码数推进机会</text>
+  </g>
+
+  <!-- Route Number -->
+  <circle cx="700" cy="450" r="35" fill="#000000" opacity="0.8" stroke="#00ff00" stroke-width="3"/>
+  <text x="700" y="465" text-anchor="middle" fill="#00ff00" font-size="36" font-weight="bold">9</text>
+</svg>

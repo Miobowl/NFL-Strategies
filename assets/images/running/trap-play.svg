@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#2d5a2d"/>
+
+  <!-- Field lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="bold" font-family="Arial">
+    Trap Play
+  </text>
+  <text x="400" y="70" text-anchor="middle" fill="#ffffff" font-size="18" font-family="Arial" opacity="0.8">
+    陷阱跑球 - 放进防守者再阻挡
+  </text>
+
+  <!-- Line of Scrimmage -->
+  <line x1="100" y1="400" x2="700" y2="400" stroke="#ffeb3b" stroke-width="3" stroke-dasharray="10,5"/>
+  <text x="50" y="405" fill="#ffeb3b" font-size="14" font-weight="bold">LOS</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow-rb" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b35"/>
+    </marker>
+    <marker id="arrow-block" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#00ffff"/>
+    </marker>
+  </defs>
+  <!-- Offensive Line -->
+  <circle cx="250" cy="400" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="250" y="407" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">LT</text>
+  <circle cx="320" cy="400" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="320" y="407" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">LG</text>
+  <circle cx="400" cy="400" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="400" y="407" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">C</text>
+  <circle cx="480" cy="400" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="480" y="407" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">RG</text>
+  <circle cx="550" cy="400" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="550" y="407" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">RT</text>
+  <!-- Quarterback -->
+  <circle cx="400" cy="440" r="22" fill="#ff6b35" stroke="#ffffff" stroke-width="3"/>
+  <text x="400" y="448" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold">QB</text>
+  <circle cx="400" cy="480" r="20" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+  <text x="400" y="487" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">RB</text>
+  <circle cx="360" cy="370" r="16" fill="#ff4444" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+  <text x="360" y="375" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">DT</text>
+  <path d="M 360,355 L 360,410" stroke="#ff4444" stroke-width="2"/>
+  <text x="330" y="390" fill="#ffeb3b" font-size="9">放进</text>
+  <path d="M 480,385 L 440,360 L 380,370" stroke="#00ffff" stroke-width="3" marker-end="url(#arrow-block)"/>
+  <circle cx="380" cy="370" r="10" fill="#ffeb3b" opacity="0.5"/>
+  <text x="420" y="355" fill="#00ffff" font-size="10">陷阱阻挡</text>
+  <path d="M 400,465 L 415,420 L 435,360 L 450,300" stroke="#ff6b35" stroke-width="4" fill="none" marker-end="url(#arrow-rb)"/>
+  <text x="400" y="515" text-anchor="middle" fill="#ffffff" font-size="12">故意放进防守者设陷阱</text>
+  <text x="400" y="535" text-anchor="middle" fill="#ffeb3b" font-size="11">拉卫从侧面阻挡</text>
+  <!-- Legend -->
+  <g transform="translate(50, 540)">
+    <circle cx="0" cy="0" r="12" fill="#4a90e2" stroke="#ffffff" stroke-width="2"/>
+    <text x="18" y="5" fill="#ffffff" font-size="11">= 进攻</text>
+
+    <circle cx="80" cy="0" r="12" fill="#ff6b35" stroke="#ffffff" stroke-width="2"/>
+    <text x="98" y="5" fill="#ffffff" font-size="11">= 持球人</text>
+
+    <line x1="180" y1="0" x2="220" y2="0" stroke="#ff6b35" stroke-width="3" marker-end="url(#arrow-rb)"/>
+    <text x="230" y="5" fill="#ffffff" font-size="11">= 跑动路线</text>
+  </g>
+</svg>
