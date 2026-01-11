@@ -1,315 +1,560 @@
 /* ==========================================
-   NFL Strategies - Responsive Styles
-   橄榄球战术网站 - 响应式样式
+   NFL Strategies - Responsive Design
+   响应式设计 - Athletic Futurism Theme
+
+   Breakpoints:
+   - Desktop XL: > 1400px
+   - Desktop: 1200px - 1400px
+   - Tablet Landscape: 992px - 1199px
+   - Tablet Portrait: 768px - 991px
+   - Mobile Large: 576px - 767px
+   - Mobile: < 576px
    ========================================== */
 
-/* ========== Desktop Large (1400px+) ========== */
+/* ========== Extra Large Desktop (> 1400px) ========== */
 @media (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+    padding: 0 var(--space-2xl);
+  }
+
   .tactics-grid {
     grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-xl);
+  }
+
+  .site-title {
+    font-size: var(--text-6xl);
+  }
+
+  .site-subtitle {
+    font-size: var(--text-2xl);
   }
 }
 
 /* ========== Desktop (1200px - 1399px) ========== */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1200px;
+  }
+
   .tactics-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
   }
 }
 
 /* ========== Tablet Landscape (992px - 1199px) ========== */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .tactics-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-md);
-  }
-
   .container {
-    padding: 0 var(--spacing-md);
-  }
-}
-
-/* ========== Tablet (768px - 991px) ========== */
-@media (min-width: 768px) and (max-width: 991px) {
-  html {
-    font-size: 15px;
-  }
-
-  .tactics-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-md);
+    max-width: 960px;
   }
 
   .site-title {
-    font-size: 2rem;
+    font-size: var(--text-4xl);
   }
 
   .site-subtitle {
-    font-size: 1rem;
+    font-size: var(--text-lg);
+    letter-spacing: 0.2em;
+  }
+
+  .tactics-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .tab-btn {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: var(--text-xs);
   }
 
   .filter-bar {
+    padding: var(--space-md) var(--space-lg);
+  }
+}
+
+/* ========== Tablet Portrait (768px - 991px) ========== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    padding: 0 var(--space-lg);
+  }
+
+  /* Header */
+  .header {
+    padding: var(--space-2xl) 0;
+  }
+
+  .site-title {
+    font-size: var(--text-3xl);
+  }
+
+  .site-subtitle {
+    font-size: var(--text-base);
+    letter-spacing: 0.15em;
+  }
+
+  /* Tab Navigation */
+  .tab-navigation {
+    gap: var(--space-2xs);
+    padding: var(--space-2xs);
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tab-btn {
+    padding: var(--space-xs) var(--space-md);
+    font-size: var(--text-xs);
+    letter-spacing: 0.05em;
+  }
+
+  /* Filter Bar */
+  .filter-bar {
     flex-direction: column;
-    align-items: stretch;
-    gap: var(--spacing-md);
+    gap: var(--space-md);
+    padding: var(--space-md);
   }
 
   .filter-group {
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
   }
 
-  .filter-select {
-    flex: 1;
-    max-width: none;
+  .filter-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .search-group {
+    max-width: 100%;
+    width: 100%;
     margin-left: 0;
-    max-width: none;
+  }
+
+  /* Grid */
+  .tactics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--space-lg) 0;
   }
 }
 
 /* ========== Mobile Large (576px - 767px) ========== */
 @media (min-width: 576px) and (max-width: 767px) {
-  html {
-    font-size: 14px;
+  .container {
+    max-width: 540px;
+    padding: 0 var(--space-md);
   }
 
-  .tactics-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-sm);
-  }
-
+  /* Header */
   .header {
-    padding: var(--spacing-lg) 0;
+    padding: var(--space-xl) 0;
+    margin-bottom: var(--space-xl);
   }
 
   .site-title {
-    font-size: 1.75rem;
+    font-size: var(--text-2xl);
+    letter-spacing: 0.04em;
   }
 
   .site-subtitle {
-    font-size: 0.9375rem;
+    font-size: var(--text-sm);
+    letter-spacing: 0.1em;
+    margin-top: var(--space-xs);
   }
 
+  /* Tab Navigation */
+  .tab-navigation {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+    padding: var(--space-xs);
+    border-radius: var(--radius-xl);
+  }
+
+  .tab-btn {
+    flex: 1;
+    min-width: calc(50% - var(--space-xs));
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-xs);
+    text-align: center;
+    border-radius: var(--radius-md);
+  }
+
+  /* Filter Bar */
   .filter-bar {
     flex-direction: column;
-    align-items: stretch;
-    gap: var(--spacing-md);
-    padding: var(--spacing-md);
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
   }
 
   .filter-group {
-    width: 100%;
     flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-xs);
+    width: 100%;
+    align-items: stretch;
   }
 
   .filter-group label {
-    font-size: 0.875rem;
+    margin-bottom: var(--space-xs);
+    text-align: center;
   }
 
   .filter-select {
     width: 100%;
+    min-width: unset;
   }
 
   .filter-buttons {
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .filter-btn {
     flex: 1;
-    padding: var(--spacing-sm);
-    font-size: 0.8125rem;
+    min-width: calc(50% - var(--space-xs));
+    text-align: center;
   }
 
   .search-group {
+    width: 100%;
+    max-width: 100%;
     margin-left: 0;
-    max-width: none;
   }
 
   .search-input {
-    font-size: 0.875rem;
+    width: 100%;
+  }
+
+  /* Results Info */
+  .results-info {
+    flex-direction: column;
+    gap: var(--space-xs);
+    text-align: center;
+  }
+
+  /* Grid */
+  .tactics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: var(--space-xl) 0;
+  }
+
+  /* Footer */
+  .footer p {
+    font-size: var(--text-xs);
+    padding: 0 var(--space-md);
   }
 }
 
-/* ========== Mobile (max-width: 575px) ========== */
+/* ========== Mobile (< 576px) ========== */
 @media (max-width: 575px) {
+  /* Root adjustments */
   html {
     font-size: 14px;
   }
 
   .container {
-    padding: 0 var(--spacing-md);
+    padding: 0 var(--space-md);
   }
 
+  /* Header */
   .header {
-    padding: var(--spacing-md) 0;
-    margin-bottom: var(--spacing-lg);
+    padding: var(--space-lg) 0;
+    margin-bottom: var(--space-lg);
+  }
+
+  .header::after {
+    height: 1px;
   }
 
   .site-title {
-    font-size: 1.5rem;
+    font-size: var(--text-xl);
+    letter-spacing: 0.02em;
+    line-height: 1.3;
   }
 
   .site-subtitle {
-    font-size: 0.875rem;
+    font-size: var(--text-xs);
+    letter-spacing: 0.08em;
+    margin-top: var(--space-xs);
   }
 
-  /* Filter Bar - Mobile Optimized */
-  .filter-bar {
-    flex-direction: column;
-    align-items: stretch;
-    gap: var(--spacing-md);
-    padding: var(--spacing-md);
+  /* Tab Navigation - Pill Style */
+  .tab-navigation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xs);
+    padding: var(--space-xs);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .tab-navigation::before {
+    border-radius: var(--radius-lg);
+  }
+
+  .tab-btn {
+    padding: var(--space-sm);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
     border-radius: var(--radius-md);
   }
 
-  .filter-group {
-    width: 100%;
+  .tab-btn.active {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  }
+
+  /* Filter Bar - Stacked */
+  .filter-bar {
     flex-direction: column;
-    align-items: flex-start;
-    gap: var(--spacing-xs);
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .filter-group {
+    flex-direction: column;
+    width: 100%;
   }
 
   .filter-group label {
-    font-size: 0.875rem;
-    font-weight: 700;
+    text-align: left;
+    margin-bottom: var(--space-xs);
+    font-size: 0.7rem;
   }
 
   .filter-select {
     width: 100%;
-    padding: var(--spacing-sm) var(--spacing-md);
-    font-size: 0.875rem;
+    min-width: unset;
+    padding: var(--space-sm);
+    font-size: var(--text-sm);
   }
 
   .filter-buttons {
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-xs);
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2xs);
+    width: 100%;
   }
 
   .filter-btn {
-    width: 100%;
-    padding: var(--spacing-sm);
-    font-size: 0.8125rem;
+    padding: var(--space-xs);
+    font-size: 0.7rem;
+    text-align: center;
   }
 
   .search-group {
-    margin-left: 0;
-    max-width: none;
     width: 100%;
+    max-width: 100%;
+    min-width: unset;
   }
 
   .search-input {
-    font-size: 0.875rem;
-    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--text-sm);
+    padding: var(--space-sm);
   }
 
   .search-btn {
+    padding: var(--space-sm);
     min-width: 44px;
-    font-size: 1rem;
   }
 
   /* Results Info */
   .results-info {
-    padding: var(--spacing-sm) 0;
-    font-size: 0.875rem;
+    padding: var(--space-sm) 0;
+    margin-bottom: var(--space-md);
   }
 
-  /* Tactics Grid - Single Column on Mobile */
+  #results-count {
+    font-size: var(--text-xs);
+    letter-spacing: 0.05em;
+  }
+
+  /* Grid - Single Column */
   .tactics-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: var(--space-lg) 0 var(--space-xl);
+    min-height: calc(100vh - 200px);
   }
 
   /* Footer */
   .footer {
-    padding: var(--spacing-lg) 0;
-    font-size: 0.8125rem;
+    padding: var(--space-lg) 0;
+    margin-top: var(--space-xl);
   }
 
-  /* Ensure touch-friendly targets (44x44px minimum) */
-  .filter-btn,
-  .search-btn,
-  .tactic-card {
-    min-height: 44px;
+  .footer p {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    padding: 0 var(--space-sm);
+  }
+
+  /* Disable complex animations on mobile */
+  body::after {
+    animation: none;
+  }
+
+  .tab-navigation::before {
+    animation: none;
+    opacity: 0.3;
   }
 }
 
-/* ========== Mobile Small (max-width: 375px) ========== */
-@media (max-width: 375px) {
-  html {
-    font-size: 13px;
+/* ========== Touch Device Optimizations ========== */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets */
+  .tab-btn,
+  .filter-btn,
+  .search-btn,
+  .tag {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects that might stick on touch */
+  .tactic-card:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+    border-color: var(--border-subtle);
+  }
+
+  .tactic-card:hover::before,
+  .tactic-card:hover::after {
+    opacity: 0;
+  }
+
+  .tactic-card:hover .card-image img {
+    transform: none;
+    filter: brightness(0.9) contrast(1.1);
+  }
+
+  .tactic-card:hover .tactic-name-en {
+    color: var(--text-primary);
+  }
+
+  .tactic-card:hover .category-badge,
+  .tactic-card:hover .difficulty-badge {
+    background: var(--color-glass);
+  }
+
+  /* Add active state for touch feedback */
+  .tactic-card:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+
+  .tab-btn:active,
+  .filter-btn:active,
+  .search-btn:active {
+    transform: scale(0.95);
+  }
+}
+
+/* ========== Landscape Mobile ========== */
+@media (max-width: 767px) and (orientation: landscape) {
+  .header {
+    padding: var(--space-md) 0;
   }
 
   .site-title {
-    font-size: 1.375rem;
+    font-size: var(--text-2xl);
   }
 
-  .filter-bar {
-    padding: var(--spacing-sm);
+  .site-subtitle {
+    display: none;
   }
 
-  .filter-buttons {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-xs);
+  .tactics-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .filter-btn {
-    font-size: 0.75rem;
-    padding: var(--spacing-xs) var(--spacing-sm);
-  }
-}
-
-/* ========== Landscape Mode Adjustments ========== */
-@media (max-height: 600px) and (orientation: landscape) {
   .modal-content {
-    max-height: 95vh;
+    max-height: 100vh;
   }
 
   .modal-image-wrapper {
     height: 200px;
   }
-
-  .header {
-    padding: var(--spacing-md) 0;
-  }
 }
 
-/* ========== Print Styles (Bonus) ========== */
+/* ========== Print Styles ========== */
 @media print {
-  .header,
-  .filter-bar,
-  .footer,
-  .modal-close,
-  .search-group {
-    display: none !important;
+  body {
+    background: white;
+    color: black;
   }
 
-  .modal-content {
-    box-shadow: none;
-    max-height: none;
-    overflow: visible;
+  body::before,
+  body::after {
+    display: none;
+  }
+
+  .header {
+    background: none;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+  }
+
+  .site-title {
+    background: none;
+    -webkit-text-fill-color: black;
+    color: black;
+    animation: none;
+  }
+
+  .tab-navigation,
+  .filter-bar,
+  .search-group,
+  .modal,
+  .footer {
+    display: none;
+  }
+
+  .tactics-grid {
+    display: block;
   }
 
   .tactic-card {
     break-inside: avoid;
     page-break-inside: avoid;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-shadow: none;
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 
-  body {
-    background: white;
+  .tactic-card::before,
+  .tactic-card::after,
+  .card-image::before,
+  .card-image::after {
+    display: none;
   }
 
-  a {
+  .category-badge,
+  .difficulty-badge {
+    border: 1px solid #333;
+    background: #f0f0f0;
     color: black;
-    text-decoration: underline;
   }
 }
 
@@ -321,49 +566,78 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
   }
-}
 
-/* ========== Dark Mode (Optional for Future) ========== */
-@media (prefers-color-scheme: dark) {
-  /*
-  Will implement if user requests dark mode support
-  Currently not in scope, but prepared for future enhancement
-  */
+  body::after {
+    animation: none;
+  }
+
+  .tab-navigation::before {
+    animation: none;
+  }
+
+  .tactic-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .site-title {
+    animation: none;
+  }
+
+  .site-subtitle {
+    animation: none;
+    opacity: 1;
+  }
+
+  .header::after {
+    animation: none;
+    transform: scaleX(1);
+  }
 }
 
 /* ========== High Contrast Mode ========== */
 @media (prefers-contrast: high) {
-  .tactic-card {
-    border: 3px solid var(--text-primary);
+  :root {
+    --border-subtle: rgba(255, 255, 255, 0.3);
+    --border-medium: rgba(255, 255, 255, 0.5);
+    --text-muted: rgba(255, 255, 255, 0.7);
+    --text-secondary: rgba(255, 255, 255, 0.9);
   }
 
-  .filter-btn,
-  .search-btn,
-  .modal-close {
-    border: 2px solid currentColor;
+  .tactic-card {
+    border-width: 2px;
+  }
+
+  .tab-btn.active,
+  .filter-btn.active {
+    outline: 2px solid white;
+    outline-offset: 2px;
   }
 }
 
-/* ========== Touch Device Optimizations ========== */
-@media (hover: none) and (pointer: coarse) {
-  /* Larger touch targets */
-  .filter-btn,
-  .search-btn,
-  .modal-close,
-  .tag {
-    min-height: 44px;
-    min-width: 44px;
-  }
+/* ========== Dark Mode Adjustments (already dark, but for system preference) ========== */
+@media (prefers-color-scheme: dark) {
+  /* Already optimized for dark mode */
+}
 
-  /* Remove hover effects on touch devices */
-  .tactic-card:hover {
-    transform: none;
+/* ========== Focus Improvements for Keyboard Navigation ========== */
+@media (hover: hover) {
+  .tactic-card:focus-within {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--neon-green);
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.4),
+      0 0 30px rgba(0, 255, 136, 0.15);
   }
+}
 
-  /* Tap highlight color */
-  * {
-    -webkit-tap-highlight-color: rgba(26, 71, 42, 0.1);
+/* ========== Large Text Mode ========== */
+@media (min-resolution: 192dpi) {
+  /* Adjustments for high DPI displays */
+  .tactic-card::before,
+  .modal-content::before {
+    padding: 0.5px;
   }
 }
